@@ -1,5 +1,6 @@
 import React from "react";
 import { Card } from "./Card";
+import { NavbarDemo } from "./NavbarDemo";
 
 /**
  * Demo component that shows usage of the Card component, with subtitle, footer, divider,
@@ -16,11 +17,15 @@ export function CardDemo() {
       style={{
         minHeight: "100vh",
         display: "flex",
+        flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
         background: "#f8fafc"
       }}
     >
+      {/* Navbar demo (visually distinct, does not affect the rest of the layout) */}
+      <NavbarDemo />
+      
       {/* Custom className for spacing example */}
       <Card
         title={
